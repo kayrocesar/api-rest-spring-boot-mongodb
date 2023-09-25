@@ -3,8 +3,6 @@ package com.kayrocesar.workshopmongo.resources;
 
 
 
-import java.net.URI;
-import java.net.URLDecoder;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,6 +38,7 @@ public class PostResource {
 		List<Post> list = service.findByTitle(text);
 		return ResponseEntity.ok().body(list);
 	}
+	
 	
 	
 	
